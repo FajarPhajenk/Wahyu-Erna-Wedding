@@ -1,0 +1,88 @@
+.setting{
+    position: fixed;
+    right: 0;
+    background-color: #ffffff;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+    top: 100px;
+    z-index: 1500;
+    border-radius: 2px 0 0 5px;
+    -webkit-border-radius: 2px 0 0 5px;
+    -moz-border-radius: 2px 0 0 5px;
+    -ms-border-radius: 2px 0 0 5px;
+    -o-border-radius: 2px 0 0 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+.setting.open{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+.setting h4{
+    font-size: 16px;
+    color: #555555;
+    font-weight: 500;
+    border: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+.setting .s-toggle-btn{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    left: -40px;
+    top: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px 20px 5px 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    cursor: pointer;
+}
+.setting .colors span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.setting label{
+    font-size: 16px;
+    color: #555555;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+body.dark .setting{
+    background-color: #222222;
+}
+
+body.dark .setting h4{
+    color: #ffffff;
+    border-color: #353535;
+}
+
+body.dark .setting label{
+    color: #bbbbbb;
+}
